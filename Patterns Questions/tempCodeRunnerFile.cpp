@@ -1,8 +1,3 @@
-#include <iostream>
-using namespace std;
-
-int main(){
-
     int n;
     cin>>n;
 
@@ -19,10 +14,3 @@ int main(){
         }
         cout<<endl;
         i = i + 1;
-        
-
-    }
-
-
-
-}
