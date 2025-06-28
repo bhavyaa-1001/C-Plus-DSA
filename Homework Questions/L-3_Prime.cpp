@@ -11,7 +11,7 @@ int main(){
     {
         if (n%i == 0)
         {
-            cout<<"Not prime"<<endl;
+             cout<<"Notprime"<<endl;
         }
         i = i+1;
     }
