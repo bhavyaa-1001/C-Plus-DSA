@@ -4,9 +4,11 @@ using namespace std;
 int main() {
     int rows1, cols1, rows2, cols2;
     cout << "Enter rows and columns for first matrix: ";
-    cin >> rows1 >> cols1;
+    cin >> rows1;
+    cin >> cols1;
     cout << "Enter rows and columns for second matrix: ";
-    cin >> rows2 >> cols2;
+    cin >> rows2;
+    cin >> cols2;
 
     if (cols1 != rows2) {
         cout << "Matrix multiplication not possible. Columns of first matrix must equal rows of second matrix." << endl;
@@ -44,3 +46,5 @@ int main() {
         }
         cout << endl;
     }
+    return 0;
+}
