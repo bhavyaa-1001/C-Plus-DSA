@@ -6,7 +6,7 @@ int main() {
     cout << "Enter a number to calculate its factorial: ";
     cin >> n;
 
-    long long factorial = 1; 
+    double factorial = 1; 
     for (int i = 1; i <= n; i++) {
         factorial *= i;
     }
