@@ -14,3 +14,4 @@ int main() {
     cout << "Factorial of " << n << " is " << factorial << endl;
     return 0;
 }
+
