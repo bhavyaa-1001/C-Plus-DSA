@@ -7,7 +7,6 @@ int main() {
     cin >> n;
 
     int fibonaaci = 0, first = 0, second = 1;
-
     for (int i = 0; i < n; i++) {
         if (i == 0) {
             fibonaaci = first;
