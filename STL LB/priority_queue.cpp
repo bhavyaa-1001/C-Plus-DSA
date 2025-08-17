@@ -19,7 +19,6 @@ int main() {
 
     // Checking if the priority queue is empty
     cout << "Is the priority queue empty? " << (pq.empty() ? "Yes" : "No") << endl;
-
     // Adding more elements
     pq.push(40);
     pq.push(50);
