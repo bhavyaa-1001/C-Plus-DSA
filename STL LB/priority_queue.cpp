@@ -9,6 +9,9 @@ int main() {
     pq.push(30);
     pq.push(10);
     pq.push(20);
+    //min-heep
+    priority_queue<int, vector<int>, greater<int>> min_pq;
+    min_pq.push(30);
 
     cout << "Priority Queue elements (in descending order): ";
     while (!pq.empty()) {
