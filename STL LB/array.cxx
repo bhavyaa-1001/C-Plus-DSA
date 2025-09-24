@@ -3,7 +3,6 @@
 using namespace std;
 
 int main(){
-
     array<int, 4> arr = {1, 2, 3, 4};
 
     int size = arr.size();
