@@ -10,7 +10,6 @@ int main(){
     {
         cout << arr[i] << endl;
     }
-    
     cout << " Element at index 2: " << arr.at(2) << endl;
     cout<< " Empty or not: " << arr.empty() << endl;
 
