@@ -6,7 +6,6 @@ using namespace std;
 int main(){
 
     vector<int> v;
-
     // Adding elements to the vector
     v.push_back(30);
     v.push_back(2);
