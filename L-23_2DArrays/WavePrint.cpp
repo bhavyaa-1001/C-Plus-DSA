@@ -36,7 +36,6 @@ int main(){
         }
         
     }
-
     // print 2D array
     for (int i = 0; i < rows; i++)
     {
