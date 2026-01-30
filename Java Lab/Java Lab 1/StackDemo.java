@@ -99,6 +99,7 @@ public class StackDemo {
 
                 default:
                     System.out.println("Invalid choice");
+                    break;
             }
         }
     }
