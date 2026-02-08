@@ -13,8 +13,6 @@ int main() {
     cout << "Address via single pointer p: " << p << endl;
     cout << "Address via double pointer pp: " << *pp << endl;
 
-
-
     // cout << &p << endl;
     cout << "Address of double pointer pp: " << pp << endl;
     cout << "Address of double pointer pp: " << &pp << endl;
