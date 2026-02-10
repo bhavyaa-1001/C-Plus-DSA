@@ -9,7 +9,7 @@ int main() {
     cout << "Address of i: " << &i << endl;
     cout << "Address via reference r: " << &r << endl;
 
-    r = 10;
+    r = 14;
     cout << "Value of i after modification through reference r: " << i << endl;
 
     return 0;
