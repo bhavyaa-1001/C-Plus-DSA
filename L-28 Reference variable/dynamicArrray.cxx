@@ -14,7 +14,7 @@ int main() {
     int n;
     cin >> n;
 
-    int *arr = new int[n]; // Dynamic array allocation
+    int *arr = new int[n]; 
 
     for(int i = 0; i < n; i++) {
         cin >> arr[i]; // Input values into the array
