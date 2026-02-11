@@ -17,7 +17,7 @@ int main() {
     int *arr = new int[n]; 
 
     for(int i = 0; i < n; i++) {
-        cin >> arr[i]; // Input values into the array
+        cin >> arr[i]; 
     }
     int ans = getSum(arr, n);
     cout << "Sum of the array is: " << ans << endl;
