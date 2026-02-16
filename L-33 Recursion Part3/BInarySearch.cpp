@@ -6,6 +6,11 @@ bool BinarySearch(int arr[], int s,int e, int key){
         return false;
     }
     int mid = s + (e-s)/2;
+
+    if(arr[mid] == key){
+        return true;
+    }
+    
     if(arr[mid] == key){
         return true;
     }
@@ -22,7 +27,7 @@ int main(){
     int arr[] = {1, 2, 3, 4, 5};
     int n = sizeof(arr) / sizeof(arr[0]);
 
-    int key = 4;
+    int key = 1;
     cout << "Key " << key << "  " << BinarySearch(arr, 0, n-1, key) << endl;
 
 }
