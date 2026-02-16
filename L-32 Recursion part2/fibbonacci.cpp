@@ -15,7 +15,6 @@ int main(){
     int n;
     cout << "Enter a number: ";
     cin >> n;
-    
     cout << "Fibonacci of " << n << " is: " << fib(n) << endl;
     return 0;
 }
