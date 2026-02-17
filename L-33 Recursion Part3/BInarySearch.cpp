@@ -10,10 +10,6 @@ bool BinarySearch(int arr[], int s,int e, int key){
     if(arr[mid] == key){
         return true;
     }
-    
-    if(arr[mid] == key){
-        return true;
-    }
     else if(arr[mid] > key){
         return BinarySearch(arr, s, mid-1, key);
     }
