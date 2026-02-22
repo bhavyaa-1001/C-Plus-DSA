@@ -1,21 +1,29 @@
 #include<iostream>
 #include<math.h>
+#include<algorithm>
+#include<string>
 using namespace std;
+
+
+string decimaltobinary(int n){
+    string ans = "";
+    while (n!=0)
+    {
+        if(n%2 == 1){
+            ans+="1";
+        }
+        else{
+            ans+="0";
+        }
+        n = n/2;
+    }
+    reverse(ans.begin(), ans.end());
+return ans;
+}
 
 int main(){
     int n ;
     cin>>n;
 
-    int answer = 0;
-    int i = 0;
-    while (n!=0)
-    {
-        int bit = n&1;
-        answer = (bit * pow(10,i)) + answer;
-
-        n = n>>1;
-        i++;
-    }
-    
-    cout<< "Answer is " <<answer<<endl ;
+    cout<<decimaltobinary(n)<<endl;
 }
