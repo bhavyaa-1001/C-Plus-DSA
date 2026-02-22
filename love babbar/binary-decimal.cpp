@@ -2,23 +2,23 @@
 #include<math.h>
 using namespace std;
 
-int main(){
-    int n ;
-    cin>>n; 
-    
-    int answer = 0;
-    int i = 0;
-    while (n!=0)
-    {            
-        int digit = n % 10;
-        if(digit == 1){
-        answer = answer + pow(2,i);
+int binarytodecimal(string x){
+        int length = x.length();
+        int answer = 0;
+        for (int i = 0; i < length; i++)
+        {
+            if(x[length-1-i] == '1'){
+                answer = answer + pow(2,i);
+            }
         }
-        n = n/10;
-        i++;
-        
-    }
-    cout<< "Answer is " <<answer<<endl ;
+        return answer;
+}
+
+int main(){
+    string x;
+    cin>>x;
+
+    cout<<binarytodecimal(x)<<endl;
 
 
 }
