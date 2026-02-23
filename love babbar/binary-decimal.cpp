@@ -13,7 +13,6 @@ int binarytodecimal(string x){
         }
         return answer;
 }
-
 int main(){
     string x;
     cin>>x;
