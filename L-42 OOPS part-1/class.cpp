@@ -13,7 +13,6 @@ class Student{
             cout << "Roll No: " << roll_no << endl;
         }
 };
-
 int main(){
     Student s1;
     s1.name = "Alice";
