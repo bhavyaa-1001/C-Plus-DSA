@@ -7,6 +7,7 @@ class Student{
         int age;
         int roll_no;
 
+        
         void display(){
             cout << "Name: " << name << endl;
             cout << "Age: " << age << endl;
