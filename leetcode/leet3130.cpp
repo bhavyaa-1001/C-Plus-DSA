@@ -12,6 +12,7 @@ public:
         if (i == 0 && j == 0) 
             return 0;
 
+            
         // Base: only zeros left
         if (j == 0) {
             if (last == 1) return 0; 
