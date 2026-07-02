@@ -28,7 +28,7 @@ int main(){
     Node* second = new Node(18);
     Node* third = new Node(65);
     Node* tail = third;
-
+ 
     head->next = second;
     second->next = third;
     third->next = NULL;
