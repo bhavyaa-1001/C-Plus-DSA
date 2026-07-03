@@ -14,24 +14,42 @@ class Node{
     }
 };
 
-void insertAtHead(Node* &head, int d){
-    Node* temp = new Node(d);
-    temp->next = head;
-    head->prev = temp;
-    head = temp;
+void insertAtHead(Node* &head,Node* &tail, int d){
+    if(head == NULL){
+        Node* temp = new Node(d);
+        head = temp;
+        tail = temp;
+        return;
+    }
+    else{
+        Node* temp = new Node(d);
+        temp->next = head;
+        head->prev = temp;
+        head = temp;
+    }
+    
 }
 
-void insertAtTail(Node* & tail, int d){
-    Node* temp = new Node(d);
-    tail->next = temp;
-    temp->prev = tail;
-    tail = temp;
+void insertAtTail(Node* &head,Node* &tail, int d){
+    if(tail == NULL){
+        Node* temp = new Node(d);
+        head = temp;
+        tail = temp;
+        return;
+    }
+    else{
+        Node* temp = new Node(d);
+        tail->next = temp;
+        temp->prev = tail;
+        tail = temp;
+    }
+    
 }
 
 void insertAtPosition(Node* &tail, Node* &head, int position , int d){
     
     if(position == 1){
-        insertAtHead(head, d);
+        insertAtHead(head, tail, d);
         return;
     }
 
@@ -45,7 +63,7 @@ void insertAtPosition(Node* &tail, Node* &head, int position , int d){
     }
 
     if(temp->next == NULL){
-        insertAtTail(tail, d);
+        insertAtTail(head,tail, d);
         return;
     }
 
@@ -78,26 +96,26 @@ int getLength(Node* &head){
 }
 
 int main(){
-    Node* head = new Node(10);
-    Node* second = new Node(20);
-    Node* third = new Node(30);
-    Node* tail = third;
+    Node* head = NULL;
+    // Node* second = new Node(20);
+    // Node* third = new Node(30);
+    Node* tail = NULL;
 
-    head->next = second;
-    second->prev = head;
-    second->next = third;
-    third->prev = second;
+    // head->next = second;
+    // second->prev = head;
+    // second->next = third;
+    // third->prev = second;
 
     print(head);
     cout << "Length of linked list is: " << getLength(head) << endl;
 
-    insertAtHead(head ,90);
+    insertAtHead(head ,tail,90);
     print(head);
 
-    insertAtTail(tail ,100);
+    insertAtTail(head,tail,100);
     print(head);
 
-    insertAtPosition(tail, head, 3, 101);
+    insertAtPosition(tail, head, 2, 101);
     print(head);
 
     return 0;
